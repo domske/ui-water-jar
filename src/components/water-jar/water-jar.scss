@@ -1,0 +1,25 @@
+:host {
+  width: 100%;
+  height: 100%;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .water {
+    transition: transform 300ms linear;
+    > * {
+      transition: fill 300ms linear;
+    }
+  }
+}
+
+:host(.no-animation) {
+  .water {
+    transition: none !important;
+    > * {
+      transition: none !important;
+    }
+  }
+}
